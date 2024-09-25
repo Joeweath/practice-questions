@@ -24,4 +24,11 @@ const fahrenheit = (temp) => {
 }
 const celsius = (temp) => {
 //(100°F − 32) × 5/9 = 37.778°C
+if(typeof(temp) !== "number"){
+    console.log("Please enter a number in degrees for celcius")
+} else {
+    return (temp -32) * 5/9
 }
+}
+
+console.log(celsius(100))
