@@ -31,4 +31,20 @@ if(typeof(temp) !== "number"){
 }
 }
 
-console.log(celsius(100))
+const varSwap = (word1, word2) => {
+    word1 += word2
+    word2 = word1.replace(`${word2}`,"")
+    word1 = word1.replace(`${word2}`,"")
+
+    return  `Your words have been swapped ${word1} and ${word2}`
+}
+
+const convertToNum = num => {
+    let converted;
+    typeof(Number(num)) == "NaN" ? 
+    console.log("Please enter a valid Number")
+    :  converted = Number(num)
+    return converted
+}
+
+console.log(convertToNum("10000000"))
